@@ -1,0 +1,19 @@
+/* ATLAS-105: Mobile viewport fixes for checkout flow */
+
+@media (max-width: 768px) {
+    .checkout-form {
+          padding: 16px;
+          width: 100%;
+    }
+
+    .checkout-form input,
+    .checkout-form button {
+          width: 100%;
+          box-sizing: border-box;
+    }
+
+    /* Fix: address form overflow on small screens */
+    .address-fields {
+          flex-direction: column;
+    }
+}
